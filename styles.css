@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Inconsolata&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Aboreto', cursive;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+  }
+
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    display:flex;
+    margin:0;   
+  }
+
+
+.container {
+    display:flex;
+    position:absolute;
+    align-items:center;
+    border-radius: 15px;
+    height:95%;
+    width:60%;
+    background-color: gainsboro;
+}
+
+.header {
+    display:flex;
+}
+
+#matrix {
+    display:grid;
+    gap:1px;
+    grid-template-columns:repeat(3, 1fr);
+    border:1px solid black;
+    font-size:72px;
+    justify-items:center;
+    justify-content:center;
+    align-items: center;
+    box-shadow: 2px 2px black;
+}
+
+.cell {
+    width: 232px;
+    height:232px;
+    background-color:white;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+}
+
+
+.win-loss {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+
+.hidden {
+    display:none;
+}
+
+.player-info {
+    width:90%;
+    display:flex;
+    flex-direction:column;
+    justify-content: start;
+    margin-bottom:auto;
+    padding:60px;
+}
+
+#resetBtn {
+    border:none;
+    width:35%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    align-content:center;
+    padding:10px;
+    font-size:24px;
+}

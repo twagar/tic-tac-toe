@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-tac-toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <form class="player-info">
+            <div class="form-grp">
+                <label for="player1">Player X</label>
+                <input type="text" class="form-cntrl" id="player1" placeholder="Input name for Player X">
+        
+            </div>
+
+            <div class="form-grp">
+                <label for="player2">Player O</label>
+                <input type="text" class="form-cntrl" id="player2" placeholder="Input name for Player O">
+        
+
+            <button type="submit" class="playBtn">Play</button>
+        </form>
+            <div class="place hidden">
+            <div class="header">
+                <h2>Tic-Tac-Toe</h2>
+            </div>
+                <div id="matrix">
+                     <div class="cell"></div>
+                     <div class="cell"></div>
+                     <div class="cell"></div>
+                     <div class="cell"></div>
+                     <div class="cell"></div>
+                     <div class="cell"></div>
+                     <div class="cell"></div>
+                     <div class="cell"></div>
+                     <div class="cell"></div>
+             </div>
+             <div class="win-loss" id="win-loss-msg">
+                <h2 id="statusTxt"></h2>
+                <button id="resetBtn">Reset</button>
+            </div>
+        </div>
+     </div>
+
+</body>
+</html>
